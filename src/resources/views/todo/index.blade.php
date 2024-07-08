@@ -10,7 +10,7 @@
         ToDo一覧
       </div>
       <div class="list-group list-group-flush">
-        @foreach ($todoList as $todo)
+        @foreach ($todos as $todo)
           <div class="d-flex align-items-center p-2">
             <span class="col-9">{{ $todo->content }}</span>
             <a href="{{ route('todo.show', $todo->id) }}" class="btn btn-info ml-3">詳細</a>
